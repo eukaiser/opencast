@@ -94,6 +94,33 @@ public class FeedServiceImpl {
   /** The security service */
   private SecurityService securityService = null;
 
+
+  /*
+   *
+   * TEST
+   * /feeds/ttt
+   *
+   */
+
+  @GET
+  @Path("/listFeedServices")
+  @Produces(MediaType.TEXT_XML)
+  public String listFeedServices() {
+    String xml = "<?xml version='1.0' encoding='UTF-8'?>\n";
+    xml += "<feed_services>\n";
+    for (FeedGenerator generator : feeds) {
+      xml += "<feed>\n";
+      xml += "<identifier>" + generator.getIdentifier() + "</identifier>\n";
+      xml += "<name>" + generator.getName() + "</name>\n";
+      xml += "<description>" + generator.getDescription() + "</description>\n";
+      xml += "<copyright>" + generator.getCopyright() + "</copyright>\n";
+      xml += "</feed>\n";
+    }
+    xml += "</feed_services>\n";
+    return xml;
+  }
+
+
   /*
    * Note: We're using Regex matching for the path here, instead of normal JAX-RS paths.  Previously this class was a servlet,
    * which was fine except that it had auth issues.  Removing the servlet fixed the auth issues, but then the paths (as written

@@ -375,7 +375,7 @@
       <configurations>
         <configuration key="source-flavor">*/themed</configuration>
         <configuration key="target-flavor">*/delivery</configuration>
-        <configuration key="target-tags">engage-download,engage-streaming,360p-quality</configuration>
+        <configuration key="target-tags">engage-download,engage-streaming,360p-quality,rss</configuration>
         <configuration key="encoding-profile">adaptive-360p.http</configuration>
       </configurations>
     </operation>
@@ -387,7 +387,7 @@
       <configurations>
         <configuration key="source-flavor">*/themed</configuration>
         <configuration key="target-flavor">*/delivery</configuration>
-        <configuration key="target-tags">engage-download,engage-streaming,480p-quality</configuration>
+        <configuration key="target-tags">engage-download,engage-streaming,480p-quality,rss</configuration>
         <configuration key="encoding-profile">adaptive-480p.http</configuration>
       </configurations>
     </operation>
@@ -399,7 +399,7 @@
       <configurations>
         <configuration key="source-flavor">*/themed</configuration>
         <configuration key="target-flavor">*/delivery</configuration>
-        <configuration key="target-tags">engage-download,engage-streaming,720p-quality</configuration>
+        <configuration key="target-tags">engage-download,engage-streaming,720p-quality,rss</configuration>
         <configuration key="encoding-profile">adaptive-720p.http</configuration>
       </configurations>
     </operation>
@@ -411,7 +411,7 @@
       <configurations>
         <configuration key="source-flavor">*/themed</configuration>
         <configuration key="target-flavor">*/delivery</configuration>
-        <configuration key="target-tags">engage-download,engage-streaming,1080p-quality</configuration>
+        <configuration key="target-tags">engage-download,engage-streaming,1080p-quality,rss</configuration>
         <configuration key="encoding-profile">adaptive-1080p.http</configuration>
       </configurations>
     </operation>
@@ -423,7 +423,7 @@
       <configurations>
         <configuration key="source-flavor">*/themed</configuration>
         <configuration key="target-flavor">*/delivery</configuration>
-        <configuration key="target-tags">engage-download,engage-streaming,2160p-quality</configuration>
+        <configuration key="target-tags">engage-download,engage-streaming,2160p-quality,rss</configuration>
         <configuration key="encoding-profile">adaptive-2160p.http</configuration>
       </configurations>
     </operation>
