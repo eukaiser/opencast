@@ -23,10 +23,23 @@
 // Code Sample:
 // @include fa-icon($fa-plus);
 
+@mixin font-smoothing($value: on) {
+
+    @if $value == on {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    @if $value == off {
+        -webkit-font-smoothing: subpixel-antialiased;
+        -moz-osx-font-smoothing: auto;
+    }
+}
+
 @mixin fa-icon(
 
     // Required Values
-    $fa-icon,
+    $fa-icon: fa-icon,
 
     // Optional Values
     $pseudo-position: before,
