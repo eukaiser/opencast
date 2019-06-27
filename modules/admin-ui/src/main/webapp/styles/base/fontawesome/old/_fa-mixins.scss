@@ -22,7 +22,7 @@
 
 // Code Sample:
 // @include fa-icon($fa-plus);
-/*
+
 @mixin fa-icon(
 
     // Required Values
@@ -67,4 +67,4 @@
     &:#{$pseudo-position} {
         float: $float;
     }
-}*/
+}
